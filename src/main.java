@@ -4,14 +4,14 @@ public class main {
     {
         AnimalWorld world = new AnimalWorld();
 
-        Cat cat = world.newCat(maxRunLimit 200);
-        Dog dog = world.newDog(maxRunLimit = 500, maxSwimLimit = 10);
+        Cat cat = world.newCat(200);
+        Dog dog = world.newDog(500, 10);
 
-        cat.runOn(neededDistance 150);
-        cat.swimOn(neededDistance 5);
+        cat.runOn(150);
+        cat.swimOn(5);
 
-        dog.runOn(neededDistance 550);
-        dog.swimOn(neededDistance 5);
+        dog.runOn( 550);
+        dog.swimOn( 5);
 
         System.out.println("Всего животных:" + world.getAnimalsCount());
         System.out.println("Сколько собак:" + world.getDogsCount());
